@@ -9,7 +9,7 @@ const router = require('./router');
 const AdminClass = require('./Server/models/admin')
 const path = require('path');
 //DB setup
-mongoose.connect('mongodb://tuscior:tuscior>@ds137760.mlab.com:37760/tusciorblog');
+mongoose.connect('mongodb://tuscior:tuscior@ds139370.mlab.com:39370/tusciordb');
 mongoose.connection.once('open', function(){
   console.log('Connection to database is made');
 }).on('error', function(error){

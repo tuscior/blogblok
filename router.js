@@ -23,7 +23,6 @@ module.exports = function(app) {
   app.get('/admin', function(request, response) {
   response.sendFile(__dirname + '/html/index.html')
 });
-  app.get('/znajdz', authentication.znajdz);
 
   app.post('/admin', authentication.login);
   app.get('/home', home.postHandler);

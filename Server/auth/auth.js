@@ -5,12 +5,6 @@ const config = require('../config.js');
 function encode(id){
   return jwt.encode({sub: id}, config.secretToken);
 }
-exports.znajdz = (req,res) => {
-Admin.findOne({}, (err, admin) => {
-	if(err) res.send(err);
-	res.json(admin);
-});
-}
 //
 exports.login = function(req, res, next){
 const password = req.body.password;
