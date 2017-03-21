@@ -5,7 +5,7 @@ export default class App extends Component {
     return (
       <div>
       <header>
-      <div className="logo"><h1>BrownSugar  <span className="guitar"><img src="http://localhost:3090/hand-holding-up-a-guitar.png" /></span></h1></div>
+      <div className="logo"><h1>BrownSugar  <span className="guitar"><img src="/hand-holding-up-a-guitar.png" /></span></h1></div>
       <nav>
       <ul>
       	<li><Link to="/home">Home</Link></li>
