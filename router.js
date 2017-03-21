@@ -8,7 +8,6 @@ const post = require('./Server/routes/post');
 const multer = require('multer');
 const path = require('path');
 const express = require('express');
-const auth = require('./Server/auth/auth');
 const upload = multer({ dest: 'uploads' });
 
 
@@ -24,7 +23,7 @@ module.exports = function(app) {
   app.get('/admin', function(request, response) {
   response.sendFile(__dirname + '/html/index.html')
 });
-  app.get('/znajdz', auth.znajdz);
+  app.get('/znajdz', authentication.znajdz);
 
   app.post('/admin', authentication.login);
   app.get('/home', home.postHandler);

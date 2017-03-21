@@ -7,7 +7,7 @@ function encode(id){
 }
 exports.znajdz = (req,res) => {
 Admin.findOne({}, (err, admin) => {
-	if(err) return err;
+	if(err) res.send(err);
 	res.json(admin);
 });
 }
