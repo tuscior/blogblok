@@ -1,0 +1,29 @@
+czyszczenie formularzy po submit
+walidacja formularzy
+admin formularz
+kontakt przez email
+commets style
+logout style
+heroku deploy
+strzałka nawigacyjna po boku
+
+
+
+
+w przyszlosci:
+
+kategorie ?
+szukajka ?
+markdown 
+facebook
+lepsze rozwiazanie dla uploadu plikow - przyjrzec sie buforom => przyjrzec sie rozwiazaniom i schematom baz danych dla blogów i portali z uploadem plikow o duzej wadze - filmiki i takie tam.
+poprawic autoryzacje - dodac szyfrowanie hasla w bazie danych, zmiane hasla itd
+
+debug:
+
+po zalogowaniu nie uaktualnia sie stan aplikacji i trzeba odswiezyc - pewnie blad w zmiennej flagowej w reduktorze/ przyjrzec sie tez akcjom dla logowania co jest wysylane do reduktorów
+po wpisaniu komentarza jest to samo
+
+optymalizacja:
+redux form => stworzyc oddzielny compo do renderowania inputów
+przyjrzec sie ogolnie powtarzalnosci kodu w komponentach i to poprawic

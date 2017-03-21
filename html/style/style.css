@@ -1,0 +1,406 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.logo {
+	color: #333;
+	font-family: 'Crimson Text', serif;
+	font-size: 1em;
+	font-style: italic;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	height: 6.5vh;
+	margin-top: 6vh;
+	transform: rotate(6deg);
+}
+.guitar img {
+	height: 33px;
+	position: absolute;
+}
+
+nav ul li {
+	display: inline-block;
+	width: 10vw;
+	padding: 2px;
+	text-align: center;
+	font-family: 'Crimson Text', serif;
+	font-size: 1.2rem;
+	margin-left: auto;
+	margin-right: auto;
+	color: #333;
+}
+nav ul li a {
+	color: #333;
+	text-decoration: none;
+}
+nav ul li a:hover {
+text-decoration: none;
+color: #b30000;
+cursor: pointer;
+}
+nav {
+	border-top: double;
+	border-bottom: double;
+	border-color: #ddd;
+	width: 60%;
+	margin: 7vh auto 10vh auto;
+}
+nav ul {
+	margin-bottom: 0;
+	display: block;
+	text-align: center;
+}
+.newPostForm{
+	margin: auto;
+	width: 500px;
+}
+.newPost {
+position: absolute;
+top: 10px;
+left: 10px;
+font-family: 'Crimson Text', serif;
+font-size: 1.2rem;
+background: none;
+border: 1px solid;
+border-radius: 40px;
+border-color: white;
+color: #333;
+transition: all 0.4s;
+}
+.newPost:hover {	
+border-radius: 40px;
+border-color: #37474f;
+border: 1px solid;
+color: white;
+background-color: #37474f;
+}
+.logout {
+border-radius: 40px;	
+position: absolute;
+top: 10px;
+left: 110px;
+font-family: 'Crimson Text', serif;
+font-size: 1.2rem;
+background: none;
+border: 1px solid;
+border-color: white;
+color: #333;
+transition: all 0.5s;
+}
+.logout:hover {
+border-radius: 40px;
+background-color: #ddd; 
+color: white;
+border: 1px solid #ddd;
+}
+.readMore {
+font-family: 'Lato', sans-serif;
+font-size: 1.2rem;
+background: none;
+border: 1px solid;
+border-radius: 40px;
+border-color: white;
+color: #333;
+transition: all 0.4s;
+margin-top: 2rem;
+}
+.readMore:hover {
+	color:#b30000;
+}
+.postImg {
+	width: 45vw;
+	float: left;
+	margin: 0;
+	margin-right: 0.65rem;
+}
+.postImg img {
+	width: 45vw;
+}
+.postViewImage {
+	display: table;
+}
+.postViewImage img {
+	width: 70%;
+	text-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+.postTitle {
+	font-family: 'Crimson Text', serif;
+}
+.postTitle h4 {
+	letter-spacing: 1px;
+}
+.postContent, .postViewContent {
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-size: 1rem;
+	opacity: 0.9;
+}
+.postViewContent:after {
+	display: block;
+	width: 35vw;
+	content: "";
+	height: 1px;
+	margin: 4rem auto 0 auto;
+	border-top: 1px solid #ccc;
+}
+.post {
+	display: block;
+}
+.post:after {
+content:'';
+display:block;
+clear:both;
+width: 100%;
+height: 1px;
+
+}
+.line {
+clear: both;
+display: block;
+width: 60vw;
+content: "";
+height: 1px;
+margin: 3rem auto 3rem auto;
+border-top: 1px solid #ccc;
+
+}
+.postImg img:hover {
+	filter: none;
+}
+.pagination li {
+	color: black;
+	display: inline-block;
+	font-size: 0.9rem;
+	background-color: white;
+	margin-left: 10px;	
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 3px;
+	border: 1px solid #333;
+}
+.pagination li:hover {
+	opacity: 0.9;
+}
+.pagination li a {
+	text-decoration: none;
+	color: black;
+}
+.pagination {
+	width: 100%;
+	text-align: center;
+	margin-top: 5rem !important;
+}
+.disabled{
+	visibility: hidden;
+}
+.active {
+	background-color: #333 !important;
+}
+.active a {
+	color: white !important;
+}
+.aboutMe p {
+width: 20%;
+margin: auto;
+margin-bottom: 25px;
+}
+.contactMe{
+color: #b30000;
+font-size: 1.2rem;
+}
+.contactMe:hover {
+	cursor: pointer;
+}
+.contactMe a{
+color: #b30000;
+}
+.contactMe a:hover{
+text-decoration: none;
+color: #b30000;
+}
+.active:hover {
+	opacity: 1;
+}
+.comments {
+	margin-top: 15px;
+	font-family: 'Crimson Text', sans-serif;
+}
+section h3{
+	text-align: center;
+}
+input[name="name"]{
+	width: 270px;
+	margin-bottom: 4px;
+}
+textarea[name="comment"] {
+	width: 270px;
+	margin-top: 2px;
+}
+textarea[name="comment"],input[name="name"]{
+	padding: 4px;
+	font-family: 'Lato', Helvetica, sans-serif;
+}
+*:focus{
+	outline: none;
+	border: 1px solid #333333;
+}
+input[name="title"],textarea[name="content"], textarea[name="Message"], input[name="Your Email"]{
+	padding: 8px;
+	font-family: 'Lato', Helvetica, sans-serif;
+}
+input[name="title"], input[name="Your Email"]{
+	width: 500px;
+}
+textarea[name="content"], textarea[name="Message"]{
+	width: 500px;
+	height: 400px
+}
+input[name='img']{
+
+}
+.me img {
+	border-radius: 50%;
+	width: 100%;
+}
+.aboutMe {
+	font-family: 'Lato', sans-serif;
+}
+.aboutMe h5 {
+	text-align: center;
+	font-style: 'italic';
+}
+.aboutMe section {
+	width: 45%;
+	margin: auto;
+	text-align: justify;
+}
+.me {
+	width: 33%;
+	margin: auto;
+}
+.me:after {
+	display: block;
+	width: 25vw;
+	content: "";
+	height: 1px;
+	margin: 4rem auto 2rem auto;
+	border-top: 1px solid #ccc;
+}
+h4 {
+	font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 500px) and (max-width: 1000px){
+.aboutMe section {
+	width: 70%;
+}	
+.aboutMe figure {
+	margin-top: 2rem;
+	width: 35%;
+	margin-bottom: 1rem;
+}
+.aboutMe p {
+	width: 70%;
+	margin: 0 auto 1rem auto;
+	padding-top: 1rem;
+	text-align: center;
+	border-top: 1px solid #ccc;
+}
+nav {
+	width: 80%;
+	margin: 50px auto 25px auto;
+	display: block;
+}
+.me:after {
+	width: 70%;
+	margin-top: 1rem;
+	border: none;
+}
+nav ul li{
+display: block;
+width: 100%;
+font-size: 1.35rem;
+}
+nav ul {
+width: 100%;
+}
+.logo {
+	height: 5vh;
+}
+.logout {
+	margin-top: 1rem;
+	left: 85%;
+	font-size: 1.4rem;
+}
+.newPost {
+	margin-top: 1rem;
+	font-size: 1.4rem;
+}
+.post a {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.readMore {
+	font-size: 1.6rem;
+}
+.pagination li {
+	font-size: 1.1rem;
+}
+}
+@media (min-width: 775px){
+nav {
+	width: 60%;
+}
+}
+@media (min-width: 900px){
+.readMore {
+	font-size: 1.4rem;
+}	
+}
