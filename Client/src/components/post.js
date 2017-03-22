@@ -69,7 +69,7 @@ const comment = comments.map(comment => {
 if(this.props.auth && post._id){
 	return (
 	<div key={post._id}>
-	<figure className="postViewImage"><img src={`http://localhost:3090/${post.img}`}/></figure>
+	<figure className="postViewImage"><img src={`${post.img}`}/></figure>
 	<div className="postTitle"><h4>{post.title}</h4>
 	<p>{post.date}</p></div>	
 	<article className="postViewContent">{post.content}</article>		
@@ -85,7 +85,7 @@ if(this.props.auth && post._id){
 else if(post._id){
 	return (
 	<div key={post._id}>
-	<figure className="postViewImage"><img src={`http://localhost:3090/${post.img}`}/></figure>
+	<figure className="postViewImage"><img src={`${post.img}`}/></figure>
 	<div className="postTitle"><h4>{post.title}</h4>
 	<p>{post.date}</p></div>	
 	<article className="postViewContent">{post.content}</article>		

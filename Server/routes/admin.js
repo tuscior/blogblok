@@ -38,7 +38,6 @@ month[10] = "November";
 month[11] = "December";
 let monthName = month[date.getMonth()];
 const time = day + ' ' + monthName + ' ' +  year + ' at ' + formatAMPM(date);
-console.log(req.file.filename);
 
 const title = req.body.title;
 const content = req.body.content;
@@ -46,8 +45,8 @@ const content = req.body.content;
 //const filename = req.file.filename;
 // heroku is read only. to upload file change filnename: filename;
 const newPost = new Post({
-  img: '2000px-Human-emblem-readonly',
-  filename: '2000px-Human-emblem-readonly',
+  img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Human-emblem-readonly.svg/1000px-Human-emblem-readonly.svg.png',
+  filename: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Human-emblem-readonly.svg/1000px-Human-emblem-readonly.svg.png',
   title: title,
   content: content,
   date: time
