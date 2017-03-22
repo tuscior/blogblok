@@ -34,7 +34,7 @@ app.use(function (req, res, next) {
 
 
 //Server setup
-const port = process.env.PORT;
+const port = process.env.PORT || 8080;
 const server = http.createServer(app);
 server.listen(port);
 console.log('Server listening on:', port);
