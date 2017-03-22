@@ -30,7 +30,7 @@ componentWillReceiveProps(nextProps){
     <div> 
     <div key={post._id} className="post"> 
     <div className="postTitle"><h4>{post.title}</h4><p><time>{post.date}</time></p></div>
-    <figure className="postImg"><img src={`http://localhost:3090/${post.img}`} /></figure>
+    <figure className="postImg"><img src={`${post.img}`} /></figure>
     <article className="postContent">{substrcontent}</article>
     <Link to={`/post/:${post._id}`}><button className="readMore">Czytaj dalej</button></Link>
     </div>

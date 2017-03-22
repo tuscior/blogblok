@@ -7,7 +7,7 @@ function submit(values){
   let formData = new FormData();
   formData.append('title', values.title);
   formData.append('content', values.content);
-  formData.append('img', values.img[0]);
+  formData.append('img', '2000px-Human-emblem-readonly');
   actions.newPost(formData);
 }
 
