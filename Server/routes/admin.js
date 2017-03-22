@@ -46,7 +46,7 @@ const path = req.file.path;
 const filename = req.file.filename;
 // heroku is read only. to upload file change filnename: filename;
 const newPost = new Post({
-  img: filename,
+  img: '2000px-Human-emblem-readonly',
   filename: '2000px-Human-emblem-readonly',
   title: title,
   content: content,
